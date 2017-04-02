@@ -1,11 +1,47 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic,700,700italic");
+@import url('https://fonts.googleapis.com/css?family=Arvo');
 
 /*
 	Directive by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+
+/*Additional Stuff*/
+
+.share-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.share-link {
+    flex: 0 0 24%;
+    color: white;
+    font-size: 18px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.bg-text{
+    background: #2196F3;
+}
+
+.bg-email {
+    background: #E91E63;
+}
+
+.bg-twitter {
+    background: #9c27b0;
+}
+
+.bg-facebook {
+    background: #ffc107;
+}
 
 .test:hover {
     color: #ed786a;
@@ -1752,6 +1788,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: Arvo, serif;
     color: #5b5b5b;
     font-weight: 700;
     letter-spacing: 0.125em;
