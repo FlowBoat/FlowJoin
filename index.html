@@ -63,7 +63,7 @@
         <section id="one" class="wrapper style1 special">
             <div class="inner">
                 <header class="major">
-                    <h2>We do experiments<br />that don't usually seriously<br /> break the universe</h2>
+                    <h2>We do experiments<br /> that don't usually seriously<br /> break the universe</h2>
                     <p style="color: white;">If you don't know who we are check out our multimedia site <a href="http://http://flowboat.github.io/FlowMedia">here</a>.
                         <br />If we sent you here, then congrats! Hurrah! You made It!
                         <br />But what does that mean? What do we do?</p>
@@ -164,117 +164,11 @@
                     <h2>Break the universe?</h2>
                 </header>
                 <ul class="actions vertical">
-                    <li><a id="joinCrew" class="button fit special">Join the Crew</a></li>
+                    <li><a class="typeform-share button" href="https://atifmahmud.typeform.com/to/G8wBMD" data-mode="popup" style="width: 100%;display:inline-block;text-decoration:none;background-color:#dd2626;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:0px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true target="_blank">Join Us</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>    
+</li>
                 </ul>
             </div>
         </section>
-
-        <!--Join Crew Modal-->
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span class="close"></span>
-                <section id="one" class="wrapper style1 special">
-                    <div class="inner">
-                        <header class="major">
-                            <h2>Thanks for showing interest <br> We hope to see you aboard</h2>
-                            <p style="color: white;">Formal applications and invitations will be rolling out in the coming weeks. So, keep your eyes peeled, and have a resume or cv prepared for submition, along with a 400 word description of what you plan to bring to FlowBoat.</p>
-                        </header>
-                    </div>
-                </section>
-                <br>
-                <section>
-                    <h4 style="color: #ed786a;">Until Then, Sign Up for a unique applicant ID:</h4>
-                    <form method="post" action="#">
-                        <div class="row uniform">
-                            <div class="6u 12u$(xsmall)">
-                                Name:
-                                <input type="text" name="demo-name" id="demo-name" value="" placeholder="" />
-                            </div>
-                            <div class="6u$ 12u$(xsmall)">
-                                Email:
-                                <input type="email" name="demo-email" id="demo-email" value="" placeholder="" />
-                            </div>
-                            <div class="12u$">
-                                <div class="select-wrapper">
-                                    <select name="demo-category" id="demo-category">
-										<option value="">- Branch -</option>
-										<option value="1">FlowLead</option>
-										<option value="1">FlowNews</option>
-										<option value="1">FlowTech</option>
-										<option value="1">FlowThink</option>
-                                        <option value="1">FlowMedia</option>
-                                        <option value="1">FlowMoney</option>
-									</select>
-                                </div>
-                            </div>
-                            <div class="12u$" id="generateButton">
-                                <ul class="actions vertical">
-                                    <li><a onclick="generate()" id="generate" class="button fit special">Generate Application ID</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="12u$">
-                                <textarea readonly name="demo-message" id="demo-message" rows="1"></textarea>
-                            </div>
-                            <div class="12u$" id="finishButton">
-                                <ul class="actions vertical">
-                                    <li><a href="#banner" onclick="setTimeout(fadeOut(),3000); finishIt()" class="button fit special more scrolly">Finish</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </form>
-                </section>
-            </div>
-        </div>
-
-        <!--Modal Script-->
-        <script>
-            // Get the modal
-            var modal = document.getElementById('myModal');
-
-            // Get the button that opens the modal
-            var btn = document.getElementById("joinCrew");
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            var finish = document.getElementById("finishButton");
-
-            function generate() {
-                var outbox = document.getElementById("demo-message");
-                var button = document.getElementById("generateButton");
-                finish.style.visibility = "visible";
-                button.style.visibility = "hidden";
-                outbox.value = String(Math.floor(Math.random() * 10000));
-            }
-
-            function fadeOut() {
-                modal.style.display = "none";
-            }
-
-            function finishIt() {
-                alert("Thanks for showing your interest, stay tuned in the upcoming weeks for more information.");
-            }
-
-            // When the user clicks on the button, open the modal 
-            btn.onclick = function() {
-                modal.style.display = "block";
-                finish.style.visibility = "hidden";
-            }
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-                modal.style.display = "none";
-            }
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-        </script>
-
         <!-- Footer -->
         <footer id="footer">
             <ul class="icons">
